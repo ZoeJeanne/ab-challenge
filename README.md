@@ -4,22 +4,39 @@
 This repo contains .....
 
 ## Source data and types discovery
+
 OrderNumber varchar 11 characters - unique identifier
+
 ClientName string variable length
+
 ProductName string variable length
+
 ProductType string variable length
+
 UnitPrice int - account for floats
+
 ProductQuantity int
+
 TotalPrice int
+
 Currency string 3 characters
+
 Delivery Address string variable length
+
 DeliveryCity string variable length - mixed cases
+
 DeliveryPostcode string variable length
+
 DeliveryCountry string variable length - mixed cases, mixed use of full country name vs country code
+
 DeliveryContactNumber - includes spaces, +44, some data missing
+
 PaymentType string - credit or debit
+
 PaymentBillingCode - varchar concat OrderNumber and payment date
+
 PaymentDate dd/mm/yyyy - look out for inconsistancies in date formate
+
 
 ### Facts
 ### Dimensions
