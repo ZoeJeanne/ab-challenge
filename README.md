@@ -45,7 +45,10 @@ PaymentDate dd/mm/yyyy - look out for inconsistancies in date formate
 
 ##  How to run the codes
 
-###Task:
+Ensure pandas is installed - run pip3 install pandas
+
+
+##Task:
 
 ABC Musical Instruments LTD is a UK musical instrument distributor. They sell and deliver orders to clients all over UK. Up until recently, their order processes have been managed on Excel. However, the management team want to move to a more robust system which would allow them to generate sale reports, manage their customers and their inventory better.
 
