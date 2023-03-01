@@ -1,52 +1,12 @@
 #ab-challenge
-##  Intro
 
-This repo contains .....
+Intro
+This repo contains a python file named challenge.py designed to cover teh aspects outlined in the task below. It also contains a csv file names sales.csv which contains the data to be processed as part of the task. The sales.csv file can be changed for testing purposes.
 
-## Source data and types discovery
+##How to run the code
+The code has functions ready with the correct paramters inplace to run end to end, please ensure there is a sales.csv file in the folder and then simply run the code.
 
-OrderNumber varchar 11 characters - unique identifier
-
-ClientName string variable length
-
-ProductName string variable length
-
-ProductType string variable length
-
-UnitPrice int - account for floats
-
-ProductQuantity int
-
-TotalPrice int
-
-Currency string 3 characters
-
-Delivery Address string variable length
-
-DeliveryCity string variable length - mixed cases
-
-DeliveryPostcode string variable length
-
-DeliveryCountry string variable length - mixed cases, mixed use of full country name vs country code
-
-DeliveryContactNumber - includes spaces, +44, some data missing
-
-PaymentType string - credit or debit
-
-PaymentBillingCode - varchar concat OrderNumber and payment date
-
-PaymentDate dd/mm/yyyy - look out for inconsistancies in date formate
-
-
-### Facts
-### Dimensions
-### Required tables
-
-
-##  How to run the codes
-
-Ensure pandas is installed - run pip3 install pandas
-
+For testing purposes, the code will print the database table contents
 
 ##Task:
 
@@ -58,24 +18,22 @@ Including in this home task is a CSV file with sample data from some of the exis
 
 Requirements:
 
-- The data models and pipelines need to be written exclusively in Python. Some SQL codes are allowed but they need to be executed via Python.
+The data models and pipelines need to be written exclusively in Python. Some SQL codes are allowed but they need to be executed via Python.
 
-- You can use existing libraries like sqlalchemy, pandas, etc. If you use existing libraries, please make sure to include a list of libraries used in requirements.txt.
+You can use existing libraries like sqlalchemy, pandas, etc. If you use existing libraries, please make sure to include a list of libraries used in requirements.txt.
 
-- The data warehouse will be stored on SQLite database. The SQLite database file can be part of your submission. However, you need to make sure your codes can recreate this database using the data from the CSV file.
+The data warehouse will be stored on SQLite database. The SQLite database file can be part of your submission. However, you need to make sure your codes can recreate this database using the data from the CSV file.
 
-- Your codes must be clean, well-structured and easy to use. Please also include a Readme file in the submission with instructions on how to run the codes.
+Your codes must be clean, well-structured and easy to use. Please also include a Readme file in the submission with instructions on how to run the codes.
 
 Assessment criteria:
 
-- Data modelling:
-
+Data modelling:
 o The split between facts and dimension are done properly.
 
 o Correct data types, primary keys and foreign keys.
 
-- Coding:
-
+Coding:
 o Your codes will be run against the sample file to test if the database is created and data is correctly ingested. Your codes will then be run against a few new sample files to see how it handles new data. One of the new files will contain errors to test how your codes handle errors.
 
 o We might delete the database file and rerun your codes to test resiliency of your pipelines. A good pipeline should be able to recreate the database from raw files.
@@ -84,13 +42,12 @@ o Your coding styles and project structure will also be assessed. We want to see
 
 Important notes:
 
-- All data files in this exercise will be CSV to keep things simple.
+All data files in this exercise will be CSV to keep things simple.
 
-- Don’t over complicate the task! You will only need between 3 to 5 tables.
+Don’t over complicate the task! You will only need between 3 to 5 tables.
 
 Bonuses:
 
-- Slowly Changing Dimension (SCD) implementation
+Slowly Changing Dimension (SCD) implementation
 
-- Unit tests
-
+Unit tests
