@@ -1,10 +1,12 @@
 #ab-challenge
 
 Intro
+
 This repo contains a python file named challenge.py designed to cover teh aspects outlined in the task below. It also contains a csv file names sales.csv which contains the data to be processed as part of the task. The sales.csv file can be changed for testing purposes.
 
 ##How to run the code
-The code has functions ready with the correct paramters inplace to run end to end, please ensure there is a sales.csv file in the folder and then simply run the code.
+
+The code in the challenge.py file has functions ready with the correct paramters inplace to run end to end, please ensure there is a sales.csv file in the folder and then simply run the code.
 
 For testing purposes, the code will print the database table contents
 
